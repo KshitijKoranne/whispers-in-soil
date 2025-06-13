@@ -96,7 +96,7 @@ export default function IntroSequence({ onComplete }: IntroSequenceProps) {
 
       <div className="max-w-4xl mx-auto p-8 text-center relative z-10">
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-16 text-flicker">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-16 text-flicker" style={{ fontFamily: 'DemonsAndDarlings, serif' }}>
           Whispers in the Soil
         </h1>
 

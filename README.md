@@ -1,6 +1,8 @@
-# Whispers in the Soil
+# Whispers in the Soil (Beta)
 
 *A horror resource management game where you are the last mourner in a plague-ravaged village.*
+
+> **🚧 Beta Version Notice:** This is a beta release. Some features may be incomplete, and additional content and sounds are still being added. Your feedback is welcome!
 
 ## 🎮 Game Overview
 

@@ -16,7 +16,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-950 flex items-center justify-center">
       <div className="text-center">
         <div className="text-4xl font-bold text-gray-100 mb-4 text-flicker" style={{ fontFamily: 'DemonsAndDarlings, serif' }}>
-          Whispers in the Soil
+          Whispers in the Soil <span className="text-2xl text-red-400 font-sans">BETA</span>
         </div>
         <div className="text-gray-400">Entering the village...</div>
       </div>

@@ -67,6 +67,7 @@ export default function LandingPage() {
         <div className={`text-center mb-12 transition-all duration-2000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <h1 className="text-6xl md:text-8xl font-bold text-gray-200 mb-6 text-flicker tracking-wider drop-shadow-2xl" style={{ fontFamily: 'DemonsAndDarlings, serif' }}>
             Whispers in the Soil
+            <span className="text-lg md:text-xl text-red-400 ml-3 font-sans opacity-80">BETA</span>
           </h1>
           <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-red-900/60 to-transparent mx-auto mb-8"></div>
           <p className="text-lg md:text-xl text-gray-500 font-serif italic max-w-2xl mx-auto text-center leading-relaxed">
@@ -125,6 +126,16 @@ export default function LandingPage() {
           <p className="text-gray-600 text-sm mt-4 italic">
             Are you prepared to face what lurks in the shadows?
           </p>
+        </div>
+
+        {/* Beta Notice */}
+        <div className={`text-center mb-8 transition-all duration-2000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="bg-red-950/20 border border-red-900/30 rounded-lg p-4 max-w-2xl mx-auto">
+            <p className="text-red-300 text-sm font-semibold mb-2">🚧 Beta Version</p>
+            <p className="text-gray-400 text-xs">
+              Some sounds and features are still being added. Your feedback helps us improve the experience!
+            </p>
+          </div>
         </div>
 
         {/* Footer */}

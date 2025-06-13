@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://whispers-in-soil.vercel.app'),
-  title: "Whispers in the Soil - Horror Resource Management Game",
+  title: "Whispers in the Soil (Beta) - Horror Resource Management Game",
   description: "Enter a plague-ravaged village as the last mourner. Manage resources, perform sacred rites, and face supernatural encounters in this atmospheric horror game.",
   keywords: "horror game, resource management, browser game, atmospheric, supernatural, plague village",
   authors: [{ name: "Kshitij Koranne" }],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: "Whispers in the Soil",
+    title: "Whispers in the Soil (Beta)",
     description: "A horror resource management game where you are the last mourner in a plague-ravaged village",
     type: "website",
     locale: "en_US",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Whispers in the Soil",
+    title: "Whispers in the Soil (Beta)",
     description: "A horror resource management game where you are the last mourner in a plague-ravaged village",
     images: ['/logo.png'],
   }

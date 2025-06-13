@@ -1,6 +1,6 @@
 {
-  "name": "Whispers in the Soil",
-  "short_name": "Whispers",
+  "name": "Whispers in the Soil (Beta)",
+  "short_name": "Whispers Beta",
   "description": "A horror resource management game where you are the last mourner in a plague-ravaged village",
   "start_url": "/",
   "display": "standalone",

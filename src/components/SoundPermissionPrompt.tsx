@@ -30,7 +30,7 @@ export default function SoundPermissionPrompt({ onPermissionGranted, onPermissio
 
       <div className="max-w-2xl mx-auto p-8 text-center relative z-10">
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-8 text-flicker">
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-100 mb-8 text-flicker" style={{ fontFamily: 'DemonsAndDarlings, serif' }}>
           Whispers in the Soil
         </h1>
 

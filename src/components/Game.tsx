@@ -97,8 +97,8 @@ export default function Game() {
       <div className="container mx-auto max-w-4xl p-4 space-y-4">
         {/* Game Title */}
         <header className="text-center py-6 border-b border-gray-700 animate-slide-up">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-100 text-flicker mb-2">
-            Whispers in the Soil
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-100 text-flicker mb-2" style={{ fontFamily: 'DemonsAndDarlings, serif' }}>
+            Whispers in the Soil <span className="text-sm text-red-400 font-sans opacity-70">BETA</span>
           </h1>
           <p className="text-gray-400 text-sm md:text-base italic">
             You are the last mourner in a village long-abandoned by life...
@@ -133,6 +133,7 @@ export default function Game() {
         {/* Footer */}
         <footer className="text-center text-gray-500 text-xs py-4 border-t border-gray-800">
           <p>Use your resources wisely. The dead are watching.</p>
+          <p className="text-gray-600 mt-2">Beta v0.9 - Some features and sounds still being added</p>
         </footer>
       </div>
     </div>
