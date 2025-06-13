@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Whispers in the Soil
 
-## Getting Started
+*A horror resource management game where you are the last mourner in a plague-ravaged village.*
 
-First, run the development server:
+## 🎮 Game Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You've inherited the grim duty of tending to the dead in a village devastated by plague. As the sole remaining mourner, you must properly bury the deceased, perform sacred rites, and maintain your sanity while supernatural forces grow restless around you.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌙 Core Mechanics
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **Resource Management**
+- **Faith**: Your spiritual strength and dedication to the sacred duty
+- **Sanity**: Mental stability in the face of horror and isolation  
+- **Stamina**: Physical energy for demanding tasks
+- **Materials**: Herbs, wood, bones, and ash for rituals and survival
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Day/Night Cycle**
+- **Day Phase**: Tend to corpses, forage for supplies, perform maintenance
+- **Night Phase**: Face spirit encounters, read ancient texts, endure psychological trials
+- **Progressive Difficulty**: Each day brings new challenges and more bodies to bury
 
-## Learn More
+### **Action System**
+Actions unlock progressively as you survive longer:
 
-To learn more about Next.js, take a look at the following resources:
+- **Days 1-3**: Basic survival (digging graves, burning bodies, rest, meditation)
+- **Days 4-7**: Spiritual work (performing rites, tending shrine, investigation)  
+- **Days 8+**: Advanced crafting (tools, water purification, complex rituals)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **Dynamic Events**
+- **Random Discoveries**: Investigate the village to uncover its dark history
+- **Spirit Encounters**: Face the restless dead who demand proper burial
+- **Atmospheric Events**: Experience the growing supernatural presence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Victory Conditions
 
-## Deploy on Vercel
+**Perfect Victory**: Bury all dead with high faith and sanity by day 7+
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Good Ending**: Complete your duty before survivors return (day 21)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Survival Endings**: Various outcomes based on your choices and performance
+
+## ☠️ Failure States
+
+- **Madness**: Sanity drops to zero from horror and isolation
+- **Loss of Faith**: Abandoning your sacred duty with unburied dead remaining
+- **Exhaustion**: Physical collapse from overwork
+- **Plague Return**: Too many unburied bodies attract disease back to the village
+- **Abandonment**: Choose to flee your responsibilities
+
+## 🎵 Features
+
+- **Atmospheric Horror**: Dark visuals and immersive sound design
+- **Progressive Gameplay**: 5-7 hours of evolving challenges
+- **Multiple Endings**: 8+ different ways your story can conclude
+- **Strategic Depth**: Balance competing resources and priorities
+- **Narrative Discovery**: Uncover the village's tragic history through exploration
+
+## 🕯️ About
+
+*Whispers in the Soil* explores themes of duty, mortality, and the weight of being the last witness to a community's tragedy. Will you honor the dead with dignity, or will the burden of your grim task drive you to madness?
+
+---
+
+*🎮 Play in your browser - no download required*
+
+*⚠️ Content Warning: This game contains themes of death, plague, and psychological horror*
