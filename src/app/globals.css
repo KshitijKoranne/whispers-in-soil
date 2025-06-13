@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'DemonsAndDarlings';
+  src: url('/fonts/DemonsAndDarlings.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #d4d4aa;
+  --accent: #8b7d6b;
+  --border: #3d3d3d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(139, 125, 107, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 125, 107, 0.05) 0%, transparent 50%);
+}
+
+/* Atmospheric text effects */
+.text-flicker {
+  animation: flicker 4s infinite;
+  text-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(127, 29, 29, 0.3),
+    0 0 30px rgba(127, 29, 29, 0.1),
+    2px 2px 4px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.1em;
+}
+
+@keyframes flicker {
+  0%, 100% { 
+    opacity: 1; 
+    text-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.8),
+      0 0 20px rgba(127, 29, 29, 0.3),
+      0 0 30px rgba(127, 29, 29, 0.1),
+      2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+  25% { 
+    opacity: 0.85; 
+    text-shadow: 
+      0 0 15px rgba(0, 0, 0, 0.9),
+      0 0 25px rgba(127, 29, 29, 0.4),
+      0 0 35px rgba(127, 29, 29, 0.2),
+      3px 3px 6px rgba(0, 0, 0, 0.9);
+  }
+  50% { 
+    opacity: 0.7; 
+    text-shadow: 
+      0 0 8px rgba(0, 0, 0, 0.7),
+      0 0 18px rgba(127, 29, 29, 0.2),
+      0 0 28px rgba(127, 29, 29, 0.05),
+      1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  75% { 
+    opacity: 0.9; 
+    text-shadow: 
+      0 0 12px rgba(0, 0, 0, 0.8),
+      0 0 22px rgba(127, 29, 29, 0.35),
+      0 0 32px rgba(127, 29, 29, 0.15),
+      2px 2px 5px rgba(0, 0, 0, 0.85);
+  }
+}
+
+/* Animation utilities */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.animate-expand {
+  animation: expand 2s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2s infinite;
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
+
+/* Hover scale animation */
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+/* Progress bar animations */
+.animate-progress {
+  animation: progressFill 0.8s ease-out forwards;
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress-width); }
+}
+
+/* Animation delays */
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes expand {
+  from { width: 0; }
+  to { width: 4rem; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes glow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgba(139, 125, 107, 0.3);
+    border-color: rgba(139, 125, 107, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 15px rgba(139, 125, 107, 0.6);
+    border-color: rgba(139, 125, 107, 0.6);
+  }
+}
+
+/* Gradient backgrounds */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
