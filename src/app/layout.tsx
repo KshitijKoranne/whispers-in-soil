@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: '/logo.png',
+        url: '/social-banner.png',
         width: 1200,
         height: 630,
-        alt: 'Whispers in the Soil - Horror Game',
+        alt: 'Whispers in the Soil (Beta) - Horror Resource Management Game',
       },
     ],
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Whispers in the Soil (Beta)",
     description: "A horror resource management game where you are the last mourner in a plague-ravaged village",
-    images: ['/logo.png'],
+    images: ['/social-banner.png'],
   }
 };
 
